@@ -1,23 +1,31 @@
-package br.movimentacao.test;
+package com.br.teste;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import br.contacorrente.Movimentacao;
+import br.com.movimentacao.Conta;
 
-public class MovimentacaoTest {
+public class BancoTeste {
 
 	@Test
-	public void testObterCredito() {
-		Movimentacao mov = new Movimentacao("teste",20, 20);
-		assertEquals("Novo teste", 20, 20);
+	public void CriarConta() {
+		Conta conta = new Conta ();
+        assertEquals("teste", 123, 123);
 	}
 
 	@Test
-	public void testObterDebito(){
-		Movimentacao mov = new Movimentacao("teste",20, 20);
-	    assertEquals("teste",20,20);
-		
+	public void ExcluirConta() {
+		Conta conta = new Conta();
+		if (conta.getSaldo() == 000) {
+			assertEquals("conta removida", 000, 000);
+			}
 	}
-}
+		@Test
+		public void SacarConta(){
+		 Conta conta = new Conta();
+		 if(conta.getSaldo()>0) {
+		 assertEquals(13, 14);
+		 }
+		}
+	
