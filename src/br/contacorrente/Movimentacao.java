@@ -1,54 +1,39 @@
-package br.contacorrente;
+package br.com.movimentacao;
 
 public class Movimentacao {
-	private double credito;
-	private double debito;
-	private String descrição;
+	private String descricao;
+	private double valor;
+	private String informaÃ§Ã£o;
+	public String getDescricao() {
+		return descricao;
+	}
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+	public double getValor() {
+		return valor;
+	}
+	public void setValor(double valor) {
+		this.valor = valor;
+	}
+	public String getInformaÃ§Ã£o() {
+		return informaÃ§Ã£o;
+	}
+	public void setInformaÃ§Ã£o(String informaÃ§Ã£o) {
+		this.informaÃ§Ã£o = informaÃ§Ã£o;
+	}
 	
-	public Movimentacao(String descrição,double debito,double credito) {
-		this.credito= credito;
-		this.debito= debito;
-		this.descrição= descrição;
-				
-	}
-
-
-	public double getCredito() {
-		return credito;
-	}
-
-	public void setCredito(double credito) {
-		this.credito = credito;
-	}
-
-	public double getDebito() {
-		return debito;
-	}
-
-	public void setDebito(double debito) {
-		this.debito = debito;
-	}
-	public String getDescrição() {
-		return descrição;
-	}
-
-
-	public void setDescrição(String descrição) {
-		this.descrição = descrição;
-	}
-
+	//Metodos da classe movimentacao
 	
-	
-
-	// Metodo da classe movimentacao
-	public void obterCredito(){
-		double valor = 0;
-		credito= + valor;
+	public void obterCredito() {
+		 double credito = 0;
+	      credito= +valor;
 	}
 	public void obterDebito(){
-		double valor =0;
-		debito = -valor;
+		double debito = 0;
+		debito =+valor;
 	}
+	
+	
 
-
-	}
+}
