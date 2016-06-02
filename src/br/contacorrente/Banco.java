@@ -1,20 +1,39 @@
-package br.contacorrente;
+package br.com.movimentacao;
 
-import java.util.ArrayList;
-
-public class Banco {
-	private ArrayList<ContaCorrente>conta;
-
-	public Banco(ArrayList <ContaCorrente>conta) {
-		this.conta=conta;
+public class Movimentacao {
+	private String descricao;
+	private double valor;
+	private String informação;
+	public String getDescricao() {
+		return descricao;
 	}
-
-	public ArrayList<ContaCorrente> getConta() {
-		return conta;
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
-
-	public void setConta(ArrayList<ContaCorrente> conta) {
-		this.conta = conta;
+	public double getValor() {
+		return valor;
 	}
- 
+	public void setValor(double valor) {
+		this.valor = valor;
+	}
+	public String getInformação() {
+		return informação;
+	}
+	public void setInformação(String informação) {
+		this.informação = informação;
+	}
+	
+	//Metodos da classe movimentacao
+	
+	public void obterCredito() {
+		 double credito = 0;
+	      credito= +valor;
+	}
+	public void obterDebito(){
+		double debito = 0;
+		debito =+valor;
+	}
+	
+	
+
 }
