@@ -1,25 +1,25 @@
-package br.movimentacao.test;
+
+package com.br.teste;
 
 import static org.junit.Assert.assertEquals;
 
-import java.util.ArrayList;
-
 import org.junit.Test;
 
-import br.contacorrente.ContaCorrente;
+import br.com.movimentacao.Movimentacao;
 
-public class BancoTest extends ContaCorrente{
-
-	public BancoTest(double saldo, int numero, double limite, char status, ArrayList<ContaCorrente> conta) {
-		super(saldo, numero, limite, status, conta);
-		
-	}
+public class MovimentaçãoTest {
 
 	@Test
-	public void testcriarConta() {
-		ContaCorrente conta = new ContaCorrente (20,1234, getStatus(), 20, null);
-		assertEquals("teste novo", conta.getLimite(),conta.getNumero());
+	public void ObterCredito() {
+		Movimentacao mov = new Movimentacao();
+		assertEquals("valor credito",100,100);
 		
 	}
+	@Test
+	public void ObterDebito(){
+		Movimentacao mov = new Movimentacao();
+		assertEquals("Valor debito", 200, 200);
+	}
+	
 
 }
